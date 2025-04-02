@@ -1,0 +1,16 @@
+Q.write a programm that make sum of a two digit number
+INPUT :
+
+num = (input("Enter a two digit number : "))
+print(type(num))  # It is just to check the change in datatype
+sum = int(num[0]) + int(num[1])
+print(type(sum))  # It is just to check the change in datatype
+print("The sum of each term is",sum )
+
+OUTPUT:
+
+Enter a two digit number : 19
+<class 'str'>
+<class 'int'>
+The sum of each term is 10
+

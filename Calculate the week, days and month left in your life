@@ -1,0 +1,25 @@
+Q. Calculate the week, days and month left in your life 
+INPUT:
+
+age = int(input("What is your current age : "))#if your end age is 90
+
+day = 365*90 - age*365
+week = 52*90 - age*52
+month = 12*90 - age*12
+
+print(f"You have {day} days,{week} weeks and {month} months left ")
+
+#                              or
+age = int(input("What is your current age : "))#if your end age is 90
+
+remaining_age = 90 - age
+day = remaining_age * 365
+week = remaining_age * 52
+month = remaining_age * 12
+
+print(f"You have {day} days,{week} weeks and {month} months left ")
+
+OUTPUT:
+    
+You have 26280 days,3744 weeks and 864 months left 
+

@@ -1,0 +1,25 @@
+Q.Program to create a tip calculator
+
+INPUT:
+print("Welcome to the tip calculator.")
+
+bill = float(input("What was the bill : "))
+
+tip = int(input("what percentage tip would you like to give? 10, 12 or 15 :" ))
+percentage = tip*bill/100
+
+num_person = int(input("Between how many people you want to spilt the bill : "))
+total_bill = (percentage+bill)/num_person
+
+print("Each person should pay : ",total_bill)
+
+OUTPUT:
+    
+Welcome to the tip calculator.
+What was the bill : 153.45
+what percentage tip would you like to give? 10, 12 or 15 :15
+Between how many people you want to spilt the bill : 5
+Each person should pay :  35.293499999999995
+
+
+

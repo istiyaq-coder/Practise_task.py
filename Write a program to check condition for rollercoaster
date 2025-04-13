@@ -1,0 +1,34 @@
+#Write a program to check condition for rollercoaster
+
+INPUT:
+
+print("welcome to the rolleroaster!!!")
+height = int(input("Enter your height cm: "))
+age = int(input("Enter your age: "))
+if height >= 120 :
+    if age <= 18:
+        print("you have to pay $7 ")
+    else :
+        print("you have to pay $12 ")
+else :
+    print("Sorry,you can't ride the rollercoaster ")
+                     OR
+print("welcome to the rolleroaster!!!")
+height = int(input("Enter your height cm: "))
+
+if height >= 120 :
+    print("You can ride the rollercoaster!")
+    age = int(input("Enter your age: "))
+    if age <= 18:
+        print("you have to pay $7 ")
+    else :
+        print("you have to pay $12 ")
+else :
+    print("Sorry,you can't ride the rollercoaster ")
+    
+OUTPUT:
+
+welcome to the rolleroaster!!!
+Enter your height cm: 120
+Enter your age: 18
+you have to pay $7

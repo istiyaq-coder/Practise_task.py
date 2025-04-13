@@ -1,0 +1,55 @@
+PROBLEM ON ROLLER COASTER
+
+print("welcome to the rolleroaster!!!")
+height = int(input("Enter your height cm: "))
+age = int(input("Enter your age: "))
+bill = 0
+
+if height >= 120 :
+    if age <= 12:
+        print("you have to pay $5 ")
+        bill = 5
+       
+    elif 12 < age <= 18 :
+        print("you have to pay $7 ")
+        bill = 7
+    
+    else :
+        print("you have to pay $12 ")
+        bill = 12
+    
+    photo = input("do you want photo taken Y or N.")    
+    if photo == "Y" : #THIS IS IN THE SAME LINE YHAT THIS WILL BE APPLY TO ALL IN THAT INDENT
+        print(f"Your final bill is {bill + 3}")
+else :
+    print("Sorry,you can't ride the rollercoaster ")
+
+print("Welcome to the rollercoaster!!!")
+height = int(input("Enter your height in cm: "))
+age = int(input("Enter your age: "))
+bill = 0
+
+if height >= 120:
+    if age <= 12:
+        print("You have to pay $5.")
+        bill = 5
+    elif 12 < age <= 18:
+        print("You have to pay $7.")
+        bill = 7
+    else:
+        print("You have to pay $12.")
+        bill = 12
+
+    photo = input("Do you want a photo taken? Y or N: ")
+    if photo.upper() == "Y":
+        bill += 3
+
+    print(f"Your final bill is ${bill}.")
+else:
+    print("Sorry, you can't ride the rollercoaster.")
+
+
+
+
+
+

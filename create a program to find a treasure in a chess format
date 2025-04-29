@@ -1,0 +1,19 @@
+#create a program to find a treasure in a chess format 
+
+row1 = [" ", " ", " "]
+row2 = [" ", " ", " "]
+row3 = [" ", " ", " "]
+
+map = [row1, row2, row3]
+
+print(f"{row1}\n{row2}\n{row3}")
+
+position = input("Where do you want to put the treasure? (e.g., 23 for column 2, row 3): ")
+
+
+horizontal = int(position[0]) - 1  # Column (0-indexed)
+vertical = int(position[1]) - 1    # Row (0-indexed)
+
+map[vertical][horizontal] = "X"
+
+print(f"{row1}\n{row2}\n{row3}")

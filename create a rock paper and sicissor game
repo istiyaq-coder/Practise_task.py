@@ -1,0 +1,61 @@
+#create a rock paper and sicissor game
+#WHat do you choose? Type 0 for rock, 1 for paper and 2 for scissor
+
+
+rock = ("""
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+""")
+
+
+paper = ("""
+     _______
+---'    ____)____
+           ______)
+          _______)
+         _______)
+---.__________)
+""")
+
+
+scissors = ("""
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+""")
+
+choice = int(input("Type 0 for rock, 1 for paper and 2 for scissor :"))
+if choice == 0 :
+    print(f"Your choice {rock}")
+elif choice == 1 :
+    print(f"Your choice {paper}")
+else :
+    print(f"Your choice {scissors}")
+    
+
+import random
+
+random_side = random.randint(0,2)
+if random_side == 0 :
+    print(f"computer choice {rock}")
+elif random_side == 1 :
+    print(f"computer choice {paper}")
+else :
+    print(f"computer choice {scissors}")
+
+
+if random_side == choice :
+    print("Draw")
+elif choice == 0 and random_side == 2 or\
+choice == 1 and random_side == 0 or\
+choice == 2 and random_side == 1 :
+    print("You win")
+else :
+    print("You loose")
